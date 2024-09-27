@@ -60,6 +60,13 @@ cd ../..
 "license": "ISC"
 }
 
+
+# -----------------------------------------------------------
+
+
+cd packages/shared-components
+npm install @shadcn/ui
+# -----------------------------------------------------------
 # Install shadcn-ui in both frontend projects
 
 cd packages/frontend-a
