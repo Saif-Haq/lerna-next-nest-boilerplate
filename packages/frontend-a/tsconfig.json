@@ -18,9 +18,22 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./*"],
+      "@labs-comp": ["../shared/lib/components/ui"],
+      "@panoptic-shared/*": ["../shared/lib/components/ui/*"],
+      "@labs-config": ["../shared/lib/config"],
+      "@labs-config/*": ["../shared/lib/config/*"],
+      "@labs-shared": ["../shared/lib"],
+      "@labs-shared/*": ["../shared/lib/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "build/types/**/*.ts",
+    "dist/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
