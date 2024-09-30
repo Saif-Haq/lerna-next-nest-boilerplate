@@ -1,5 +1,5 @@
 {
-  "name": "lerna-next-nest-boilerplate-(copy)",
+  "name": "lerna-next-nest-boilerplate",
   "version": "1.0.0",
   "description": "mkdir lerna-monorepo cd lerna-monorepo",
   "main": "index.js",
