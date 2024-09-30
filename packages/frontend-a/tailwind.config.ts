@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import animate from "tailwindcss-animate"
 // const config: Config = {
 //   content: [
 //     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -19,18 +19,18 @@ import type { Config } from "tailwindcss";
 // export default config;
 
 /** @type {import('tailwindcss').Config} */
-// eslint-disable-next-line @typescript-eslint/no-var-requires, no-undef
-import themeConfig from "../shared/lib/config/tailwind/tailwind.config";
+// eslint-disable-next-line @typescript-eslint/no-var-requires, no-undef, @typescript-eslint/no-require-imports
+const themeConfig = require("../shared/lib/config/tailwind/tailwind.config");
 // import themeConfig from "shared";
 
 const config: Config = {
   content: [
-    "./index.html",
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
     "./src/**/*.{js,ts,jsx,tsx}",
     "../shared/lib/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: themeConfig.theme,
-  plugins: [],
+  plugins: [animate],
 };
 
 export default config;
