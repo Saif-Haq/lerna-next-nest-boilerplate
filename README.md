@@ -467,3 +467,4 @@ npx lerna bootstrap
 copy config from labs
 changed ts config and tailwind config in fornt-end-a
 import the shared button
+added animate plugin :)
