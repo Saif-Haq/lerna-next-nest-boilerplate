@@ -12,7 +12,7 @@ export default function Home() {
         <SheetTrigger asChild>
           <Button variant="outline">Open</Button>
         </SheetTrigger>
-        <SheetContent className="bg-white">
+        <SheetContent className="">
           <SheetHeader>
             <SheetTitle>Edit profile</SheetTitle>
             <SheetDescription>
